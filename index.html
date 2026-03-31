@@ -25,10 +25,10 @@
         <div class="hero-content">
           <h1 class="hero-title">
             <span class="hero-name text-gradient">Sumit Hansraj Wagdare</span>
-            <br/>Engineering the Future of IoT & Web.
+            <br/>Architecting Intelligence.
           </h1>
           <p class="hero-subtitle">
-            Computer Engineering at TCOER | Innovator | Developer
+            IoT Innovator | Full-Stack Developer | Computer Engineering @ TCOER
           </p>
           <div class="hero-actions">
             <!-- lucide icons will be injected here via js -->
@@ -46,38 +46,48 @@
         </div>
       </section>
 
-      <!-- THE EVOLUTION (Skills Bento Box) -->
+      <!-- THE TECH HUB -->
       <section class="evolution bento-container">
         <div class="section-header">
-          <h2>The Evolution</h2>
+          <h2>The Tech Hub</h2>
           <p>Mastering the tools of tomorrow.</p>
         </div>
         
         <div class="bento-grid skills-grid">
+          <div class="glass-panel skill-card large-span">
+            <h3><i data-lucide="code-2"></i> Algorithmic Progress</h3>
+            <div class="leetcode-stats">
+              <div class="lc-bar-bg">
+                <div class="lc-bar-fill lc-animate"></div>
+              </div>
+              <div class="lc-metrics">
+                <span>LeetCode</span>
+                <span class="text-gradient">Active</span>
+              </div>
+            </div>
+          </div>
+
           <div class="glass-panel skill-card core">
-            <h3><i data-lucide="code-2"></i> Core</h3>
+            <h3><i data-lucide="code"></i> Core</h3>
             <div class="tags">
+              <span class="tag">Java (Elite)</span>
               <span class="tag">Python</span>
-              <span class="tag">Java (OOP)</span>
               <span class="tag">DSA</span>
               <span class="tag">C</span>
             </div>
           </div>
           
           <div class="glass-panel skill-card data">
-            <h3><i data-lucide="database"></i> Data & API</h3>
+            <h3><i data-lucide="database"></i> Data</h3>
             <div class="tags">
               <span class="tag">SQL</span>
-              <span class="tag">DBMS</span>
-              <span class="tag">Pandas</span>
+              <span class="tag">Firebase</span>
             </div>
           </div>
           
           <div class="glass-panel skill-card web">
-            <h3><i data-lucide="layout"></i> Web Ecosystem</h3>
+            <h3><i data-lucide="layout"></i> Ecosystem</h3>
             <div class="tags">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
               <span class="tag">Django</span>
               <span class="tag">Spring Boot</span>
             </div>
@@ -142,6 +152,13 @@
                 <span class="project-num">02</span>
                 <h3>Smart Stress Monitoring</h3>
                 <p>An IoT masterpiece designed to detect and monitor stress levels in real-time leveraging edge computing.</p>
+                
+                <div class="exploded-view">
+                   <div class="layer layer-1">Firebase Cloud</div>
+                   <div class="layer layer-2">ESP32 Core</div>
+                   <div class="layer layer-3">Biometric Sensors</div>
+                </div>
+
                 <div class="tech-stack">
                   <span class="tag">ESP32</span>
                   <span class="tag">Firebase</span>
@@ -150,6 +167,54 @@
                 </div>
               </div>
             </div>
+
+            <!-- Project 3 -->
+            <div class="glass-panel project-card">
+              <div class="project-content">
+                <span class="project-num">03</span>
+                <h3>SkyPulse Weather</h3>
+                <p>A dynamic, real-time advanced weather monitoring app featuring Apple-inspired glassmorphism and animated forecasting.</p>
+                <div class="tech-stack">
+                  <span class="tag">Vanilla JS</span>
+                  <span class="tag">Open-Meteo API</span>
+                  <span class="tag live-data-tag">Live Data 🔴</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE CODE LAB (GitHub) -->
+      <section class="code-lab bento-container">
+        <div class="section-header">
+          <h2>The Code Lab</h2>
+          <p>Explore the algorithms and applications driving the future.</p>
+        </div>
+        
+        <div class="github-carousel-wrapper glass-panel">
+          <div class="github-carousel">
+            <div class="repo-card">
+              <i data-lucide="code-2" class="repo-icon"></i>
+              <h3>Drone Navigation Framework</h3>
+              <p>Autonomous path planning and RL in complex environments.</p>
+              <div class="repo-stats"><span>⭐ 12</span> <span>🔄 5</span></div>
+            </div>
+            <div class="repo-card">
+              <i data-lucide="code-2" class="repo-icon"></i>
+              <h3>SkyPulse.js</h3>
+              <p>Apple-inspired weather application.</p>
+              <div class="repo-stats"><span>⭐ 8</span> <span>🔄 2</span></div>
+            </div>
+            <div class="repo-card">
+              <i data-lucide="code-2" class="repo-icon"></i>
+              <h3>ByYou-ForYou Scripts</h3>
+              <p>Linux and SQL session material.</p>
+              <div class="repo-stats"><span>⭐ 15</span> <span>🔄 10</span></div>
+            </div>
+          </div>
+          <div class="github-cta">
+             <a href="https://github.com/SumitWagdare" target="_blank" class="glass-btn primary"><i data-lucide="code"></i> Explore Source Code</a>
           </div>
         </div>
       </section>
@@ -193,6 +258,33 @@
               <img src="/presentation1.jpg" alt="Speaking Session" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- THE FINALE: LIQUID CONTACT FORM -->
+      <section class="finale bento-container">
+        <div class="section-header">
+          <h2>Let's Connect</h2>
+          <p>Drop a message in the liquid portal.</p>
+        </div>
+        
+        <div class="contact-form-wrapper glass-panel">
+          <form id="liquid-form" class="liquid-form">
+            <div class="input-group">
+              <input type="text" id="name" required placeholder=" " />
+              <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required placeholder=" " />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" rows="4" required placeholder=" "></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="glass-btn primary submit-btn"><i data-lucide="mail"></i> Send Message</button>
+            <div class="success-msg hidden"><i data-lucide="check-circle"></i> Message Sent</div>
+          </form>
         </div>
       </section>
 

@@ -1,14 +1,14 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
-import { createIcons, Mail, Code, Code2, Database, Layout, Award, Cloud, Briefcase, MessageCircle } from 'lucide';
+import { createIcons, Mail, Code, Code2, Database, Layout, Award, Cloud, Briefcase, MessageCircle, CheckCircle } from 'lucide';
 
 // Register Plugins
 gsap.registerPlugin(ScrollTrigger);
 
 // Initialize Lucide Icons
 createIcons({
-  icons: { Mail, Code, Code2, Database, Layout, Award, Cloud, Briefcase, MessageCircle }
+  icons: { Mail, Code, Code2, Database, Layout, Award, Cloud, Briefcase, MessageCircle, CheckCircle }
 });
 
 // Initialize Smooth Scroll (Lenis)
@@ -116,6 +116,18 @@ gsap.from('.skill-card', {
   }
 });
 
+// LeetCode Progress Bar Animation
+gsap.to('.lc-bar-fill', {
+  width: '80%',
+  duration: 1.5,
+  ease: 'power3.out',
+  scrollTrigger: {
+    trigger: '.evolution',
+    start: 'top 75%',
+    toggleActions: 'play none none reverse'
+  }
+});
+
 // Milestones Certification Cards Reveal
 gsap.from('.cert-card', {
   y: 40,
@@ -166,6 +178,52 @@ gsap.from('.lead-card', {
     toggleActions: 'play none none reverse'
   }
 });
+
+// Add 3D Hover to Certs
+const certCards = document.querySelectorAll('.cert-card');
+certCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -15;
+    const rotateY = ((x - centerX) / centerX) * 15;
+    
+    gsap.to(card, {
+      rotateX: rotateX,
+      rotateY: rotateY,
+      transformPerspective: 1000,
+      ease: 'power1.out',
+      duration: 0.5
+    });
+  });
+  card.addEventListener('mouseleave', () => {
+    gsap.to(card, {
+      rotateX: 0,
+      rotateY: 0,
+      ease: 'power3.out',
+      duration: 1
+    });
+  });
+});
+
+// Contact Form Submission Mock
+const form = document.getElementById('liquid-form');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.submit-btn');
+    const msg = form.querySelector('.success-msg');
+    
+    gsap.to(btn, { scale: 0.95, duration: 0.1, yoyo: true, repeat: 1, onComplete: () => {
+        btn.style.display = 'none';
+        msg.classList.remove('hidden');
+        gsap.from(msg, { y: 20, opacity: 0, duration: 0.5, ease: 'back.out(1.5)' });
+    }});
+  });
+}
 
 // Ensure Lenis updates on window resize
 window.addEventListener('resize', () => {
