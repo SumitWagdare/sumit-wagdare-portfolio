@@ -1,307 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumit Hansraj Wagdare | IoT & Web Engineering</title>
-    <!-- Preload fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- Liquid Cursor element -->
-    <div class="cursor"></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumit Wagdare — Systems Lab</title>
+<meta name="description" content="Sumit Wagdare — AI & IoT developer building intelligent real-time systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-    <!-- Background Liquid Gradient Elements -->
-    <div class="bg-gradient bg-blob-1"></div>
-    <div class="bg-gradient bg-blob-2"></div>
-    
-    <main data-scroll-container>
-      
-      <!-- HERO SECTION -->
-      <section class="hero bento-container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            <span class="hero-name text-gradient">Sumit Hansraj Wagdare</span>
-            <br/>Architecting Intelligence.
-          </h1>
-          <p class="hero-subtitle">
-            IoT Innovator | Full-Stack Developer | Computer Engineering @ TCOER
-          </p>
-          <div class="hero-actions">
-            <!-- lucide icons will be injected here via js -->
-            <button class="glass-btn primary"><i data-lucide="mail"></i> Contact Me</button>
-            <button class="glass-btn"><i data-lucide="code"></i> View Work</button>
-          </div>
+<header>
+  <nav class="wrap">
+    <a href="#hero" class="brand"><span class="caret">&gt;</span>sumit<span style="color:var(--text-faint)">@</span>systems<span style="color:var(--text-faint)">:~$</span></a>
+    <div class="navlinks" id="navlinks">
+      <a href="#work">work</a>
+      <a href="#capabilities">capabilities</a>
+      <a href="#credentials">credentials</a>
+      <a href="#contact" class="cta">contact</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section id="hero">
+  <canvas id="scope"></canvas>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">AI &amp; IoT DEVELOPER · PUNE, IN</div>
+        <h1>Building intelligent<br>systems for the<br><span class="accent">real world.</span></h1>
+        <p class="lede">I design and ship applications where software, sensors, and real-time data have to work together — heritage AR, environmental dashboards, and embedded intelligence, end to end.</p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">View engineering work →</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
+      </div>
+      <div class="status-panel" data-reveal>
+        <div class="title">// system status</div>
+        <div class="status-row"><span><span class="blinker"></span>system</span><span class="val">online</span></div>
+        <div class="status-row"><span>ai_modules</span><span class="val">active</span></div>
+        <div class="status-row"><span>iot_nodes</span><span class="val amber">14 connected</span></div>
+        <div class="status-row"><span>weather_api</span><span class="val">24ms ping</span></div>
+        <div class="status-row"><span>heritage_ar_engine</span><span class="val">online</span></div>
+        <div class="cursor-line">&gt; awaiting input<span class="blink-cursor">_</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="hero-image-wrapper glass-panel">
-          <div class="image-inner">
-            <!-- Placeholder for high-res photo -->
-            <img src="/portrait.jpg" alt="Sumit Hansraj Wagdare" class="profile-img" />
-          </div>
-          <div class="glass-reflection"></div>
+<section id="focus">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">CURRENT FOCUS</div>
+      <h2>What I'm running right now</h2>
+    </div>
+    <div class="focus-grid" data-reveal>
+      <div class="focus-card"><span class="tag">Training</span><span class="name">Edge AI systems</span></div>
+      <div class="focus-card"><span class="tag">Building</span><span class="name">AR heritage translator</span></div>
+      <div class="focus-card"><span class="tag">Researching</span><span class="name">Embedded intelligence</span></div>
+      <div class="focus-card"><span class="tag">Learning</span><span class="name">Docker &amp; system design</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div data-reveal>
+      <div class="eyebrow">ABOUT</div>
+      <h2 style="margin-bottom:20px;">Software and hardware, on the same board</h2>
+      <div class="about-body">
+        <p>I'm a Computer Engineering student at Trinity College of Engineering and Research (TCOER), Pune, affiliated with Savitribai Phule Pune University. I build systems that combine software and hardware to solve real problems — AI, IoT, embedded systems, AR, and full-stack applications all sit in the same toolbox for me.</p>
+        <p>Most recently that's meant a semester interning on production web systems, leading technical coordination for a national hackathon team, and running a Linux and SQL training session for first-year engineering students as a peer educator.</p>
+      </div>
+    </div>
+    <div class="specsheet" data-reveal>
+      <div class="row"><span class="k">institution</span><span class="v">TCOER, Pune (SPPU)</span></div>
+      <div class="row"><span class="k">program</span><span class="v">Computer Engineering</span></div>
+      <div class="row"><span class="k">year</span><span class="v">Third-year</span></div>
+      <div class="row"><span class="k">cgpa</span><span class="v">8.68 · Distinction</span></div>
+      <div class="row"><span class="k">focus</span><span class="v">AI · IoT · Embedded</span></div>
+      <div class="row"><span class="k">status</span><span class="v" style="color:var(--teal)">open to roles</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">ENGINEERING WORK</div>
+      <h2>Projects</h2>
+      <p class="section-sub">Six systems spanning AR, environmental data, computer vision, and embedded sensing.</p>
+    </div>
+    <div class="proj-grid">
+
+      <div class="proj-card" data-reveal>
+        <div class="proj-top"><span class="proj-name">Smart Heritage Translator</span><span class="proj-index">01</span></div>
+        <p class="proj-desc">An AR-based system that translates and explains Indian cultural heritage in real time, linking an immersive frontend to a context-aware translation service.</p>
+        <div class="proj-meta">
+          <div class="row"><span class="label">impact</span><span class="value">Makes heritage accessible to younger audiences</span></div>
         </div>
-      </section>
-
-      <!-- THE TECH HUB -->
-      <section class="evolution bento-container">
-        <div class="section-header">
-          <h2>The Tech Hub</h2>
-          <p>Mastering the tools of tomorrow.</p>
+        <div class="tags"><span class="tag-pill">JavaScript</span><span class="tag-pill">AR</span><span class="tag-pill">Real-Time Systems</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/SumitWagdare" class="proj-link primary">GitHub ↗</a>
         </div>
-        
-        <div class="bento-grid skills-grid">
-          <div class="glass-panel skill-card large-span">
-            <h3><i data-lucide="code-2"></i> Algorithmic Progress</h3>
-            <div class="leetcode-stats">
-              <div class="lc-bar-bg">
-                <div class="lc-bar-fill lc-animate"></div>
-              </div>
-              <div class="lc-metrics">
-                <span>LeetCode</span>
-                <span class="text-gradient">Active</span>
-              </div>
-            </div>
-          </div>
+      </div>
 
-          <div class="glass-panel skill-card core">
-            <h3><i data-lucide="code"></i> Core</h3>
-            <div class="tags">
-              <span class="tag">Java (Elite)</span>
-              <span class="tag">Python</span>
-              <span class="tag">DSA</span>
-              <span class="tag">C</span>
-            </div>
-          </div>
-          
-          <div class="glass-panel skill-card data">
-            <h3><i data-lucide="database"></i> Data</h3>
-            <div class="tags">
-              <span class="tag">SQL</span>
-              <span class="tag">Firebase</span>
-            </div>
-          </div>
-          
-          <div class="glass-panel skill-card web">
-            <h3><i data-lucide="layout"></i> Ecosystem</h3>
-            <div class="tags">
-              <span class="tag">Django</span>
-              <span class="tag">Spring Boot</span>
-            </div>
-          </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-top"><span class="proj-name">SkyPulse</span><span class="proj-index">02</span></div>
+        <p class="proj-desc">A deployed weather intelligence platform fetching and rendering live environmental data through a responsive, real-time interface.</p>
+        <div class="proj-meta">
+          <div class="row"><span class="label">deploy</span><span class="value">Optimized frontend, shipped on Vercel</span></div>
         </div>
-      </section>
-
-      <!-- THE MILESTONES (Certifications) -->
-      <section class="milestones bento-container">
-        <div class="section-header">
-          <h2>The Milestones</h2>
-          <p>Validated expertise from industry leaders.</p>
+        <div class="tags"><span class="tag-pill">JavaScript</span><span class="tag-pill">APIs</span><span class="tag-pill">Vercel</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/SumitWagdare" class="proj-link primary">GitHub ↗</a>
         </div>
-        
-        <div class="bento-grid cert-grid">
-          <div class="glass-panel cert-card nptel">
-            <div class="cert-icon"><i data-lucide="award"></i></div>
-            <div class="cert-info">
-              <h3>Programming in Java</h3>
-              <p>NPTEL Elite Certification (IIT Kharagpur)</p>
-              <div class="badge">84% Score</div>
-            </div>
-          </div>
-          
-          <div class="glass-panel cert-card oracle">
-            <div class="cert-icon"><i data-lucide="cloud"></i></div>
-            <div class="cert-info">
-              <h3>OCI AI Foundations Associate</h3>
-              <p>Oracle Certified</p>
-              <div class="badge oracle-badge">Certified</div>
-            </div>
-          </div>
+      </div>
+
+      <div class="proj-card" data-reveal>
+        <div class="proj-top"><span class="proj-name">Bharat Darshan</span><span class="proj-index">03</span></div>
+        <p class="proj-desc">A hackathon platform presenting India's historical richness through an interactive UI and a dedicated heritage information system.</p>
+        <div class="proj-meta">
+          <div class="row"><span class="label">problem</span><span class="value">Dense cultural data, made digestible</span></div>
         </div>
-      </section>
-
-      <!-- THE LAB (Projects - Horizontal Scroll Target) -->
-      <section class="lab">
-        <div class="section-header container">
-          <h2>The Lab</h2>
-          <p>Where ideas become reality.</p>
+        <div class="tags"><span class="tag-pill">Frontend</span><span class="tag-pill">JavaScript</span><span class="tag-pill">UI/UX</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/SumitWagdare" class="proj-link primary">GitHub ↗</a>
         </div>
-        
-        <div class="lab-scroll-container">
-          <div class="lab-track">
-            <!-- Project 1 -->
-            <div class="glass-panel project-card">
-              <div class="project-content">
-                <span class="project-num">01</span>
-                <h3>Bharat Darshan</h3>
-                <p>A cultural heritage journey platform enabling users to explore India's diverse traditions.</p>
-                <div class="tech-stack">
-                  <span class="tag">Django</span>
-                  <span class="tag">SQL</span>
-                  <span class="tag">Backend Dev</span>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Project 2 -->
-            <div class="glass-panel project-card">
-              <div class="project-content">
-                <span class="project-num">02</span>
-                <h3>Smart Stress Monitoring</h3>
-                <p>An IoT masterpiece designed to detect and monitor stress levels in real-time leveraging edge computing.</p>
-                
-                <div class="exploded-view">
-                   <div class="layer layer-1">Firebase Cloud</div>
-                   <div class="layer layer-2">ESP32 Core</div>
-                   <div class="layer layer-3">Biometric Sensors</div>
-                </div>
+      </div>
 
-                <div class="tech-stack">
-                  <span class="tag">ESP32</span>
-                  <span class="tag">Firebase</span>
-                  <span class="tag">Sensors</span>
-                  <span class="tag">IoT</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="glass-panel project-card">
-              <div class="project-content">
-                <span class="project-num">03</span>
-                <h3>SkyPulse Weather</h3>
-                <p>A dynamic, real-time advanced weather monitoring app featuring Apple-inspired glassmorphism and animated forecasting.</p>
-                <div class="tech-stack">
-                  <span class="tag">Vanilla JS</span>
-                  <span class="tag">Open-Meteo API</span>
-                  <span class="tag live-data-tag">Live Data 🔴</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-top"><span class="proj-name">NutriScan</span><span class="proj-index">04</span></div>
+        <p class="proj-desc">A malnutrition detection system combining computer vision with sensor data, pitched at the MIT ADT AI Grand Challenge.</p>
+        <div class="proj-meta">
+          <div class="row"><span class="label">domain</span><span class="value">Computer vision + IoT sensing</span></div>
         </div>
-      </section>
-
-      <!-- THE CODE LAB (GitHub) -->
-      <section class="code-lab bento-container">
-        <div class="section-header">
-          <h2>The Code Lab</h2>
-          <p>Explore the algorithms and applications driving the future.</p>
+        <div class="tags"><span class="tag-pill">Vision</span><span class="tag-pill">Sensors</span><span class="tag-pill">AI</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/SumitWagdare" class="proj-link primary">GitHub ↗</a>
         </div>
-        
-        <div class="github-carousel-wrapper glass-panel">
-          <div class="github-carousel">
-            <div class="repo-card">
-              <i data-lucide="code-2" class="repo-icon"></i>
-              <h3>Drone Navigation Framework</h3>
-              <p>Autonomous path planning and RL in complex environments.</p>
-              <div class="repo-stats"><span>⭐ 12</span> <span>🔄 5</span></div>
-            </div>
-            <div class="repo-card">
-              <i data-lucide="code-2" class="repo-icon"></i>
-              <h3>SkyPulse.js</h3>
-              <p>Apple-inspired weather application.</p>
-              <div class="repo-stats"><span>⭐ 8</span> <span>🔄 2</span></div>
-            </div>
-            <div class="repo-card">
-              <i data-lucide="code-2" class="repo-icon"></i>
-              <h3>ByYou-ForYou Scripts</h3>
-              <p>Linux and SQL session material.</p>
-              <div class="repo-stats"><span>⭐ 15</span> <span>🔄 10</span></div>
-            </div>
-          </div>
-          <div class="github-cta">
-             <a href="https://github.com/SumitWagdare" target="_blank" class="glass-btn primary"><i data-lucide="code"></i> Explore Source Code</a>
-          </div>
+      </div>
+
+      <div class="proj-card" data-reveal>
+        <div class="proj-top"><span class="proj-name">Smart Stress Monitoring System</span><span class="proj-index">05</span></div>
+        <p class="proj-desc">A web and IoT dashboard tracking heart rate and mood data to surface stress patterns in real time.</p>
+        <div class="proj-meta">
+          <div class="row"><span class="label">stack</span><span class="value">IoT sensors + web dashboard</span></div>
         </div>
-      </section>
-
-      <!-- EXPERIENCE & COMMUNITY -->
-      <section class="leadership bento-container">
-        <div class="section-header">
-          <h2>Experience & Leadership</h2>
-          <p>Building communities and leading teams.</p>
+        <div class="tags"><span class="tag-pill">IoT</span><span class="tag-pill">Dashboard</span><span class="tag-pill">Health Data</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/SumitWagdare" class="proj-link primary">GitHub ↗</a>
         </div>
+      </div>
 
-        <div class="bento-grid lead-grid">
-          <div class="glass-panel lead-card">
-            <div class="lead-content">
-              <h3>Amdox Technologies</h3>
-              <p class="role">Software Internship</p>
-              <p>Contributed to enterprise-level software solutions and optimized delivery pipelines.</p>
-            </div>
-          </div>
-
-          <div class="glass-panel lead-card large-span">
-            <div class="lead-content">
-              <h3>Smart India Hackathon (SIH)</h3>
-              <p class="role">Team Lead</p>
-              <p>Led a multi-disciplinary team to develop innovative solutions under pressure, coordinating architecture and deployment strategies.</p>
-            </div>
-            <!-- Presentation image 2 -->
-            <div class="community-image" style="margin-top: 1rem;">
-              <img src="/presentation2.jpg" alt="SIH Team Lead" />
-            </div>
-          </div>
-
-          <div class="glass-panel lead-card full-span community">
-            <div class="lead-content">
-              <h3>"By You, For You" Session</h3>
-              <p class="role">Technical Speaker</p>
-              <p>Delivered an interactive, deep-dive session on Linux environment navigation and SQL database management for peers.</p>
-            </div>
-            <!-- Optional image placeholder for the community presentation -->
-            <div class="community-image">
-              <img src="/presentation1.jpg" alt="Speaking Session" />
-            </div>
-          </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-top"><span class="proj-name">Piezoelectric Energy Harvesting System</span><span class="proj-index">06</span></div>
+        <p class="proj-desc">An embedded system that harvests and senses ambient mechanical energy via piezoelectric materials, exploring self-powered sensing.</p>
+        <div class="proj-meta">
+          <div class="row"><span class="label">domain</span><span class="value">Embedded systems, energy harvesting</span></div>
         </div>
-      </section>
-
-      <!-- THE FINALE: LIQUID CONTACT FORM -->
-      <section class="finale bento-container">
-        <div class="section-header">
-          <h2>Let's Connect</h2>
-          <p>Drop a message in the liquid portal.</p>
+        <div class="tags"><span class="tag-pill">Embedded</span><span class="tag-pill">Hardware</span><span class="tag-pill">Sensing</span></div>
+        <div class="proj-links">
+          <a href="https://github.com/SumitWagdare" class="proj-link primary">GitHub ↗</a>
         </div>
-        
-        <div class="contact-form-wrapper glass-panel">
-          <form id="liquid-form" class="liquid-form">
-            <div class="input-group">
-              <input type="text" id="name" required placeholder=" " />
-              <label for="name">Name</label>
-            </div>
-            <div class="input-group">
-              <input type="email" id="email" required placeholder=" " />
-              <label for="email">Email</label>
-            </div>
-            <div class="input-group">
-              <textarea id="message" rows="4" required placeholder=" "></textarea>
-              <label for="message">Message</label>
-            </div>
-            <button type="submit" class="glass-btn primary submit-btn"><i data-lucide="mail"></i> Send Message</button>
-            <div class="success-msg hidden"><i data-lucide="check-circle"></i> Message Sent</div>
-          </form>
-        </div>
-      </section>
+      </div>
 
-      <footer>
-        <div class="bento-container">
-          <div class="footer-content glass-panel">
-            <p>&copy; 2026 Sumit Hansraj Wagdare. Designed with precision.</p>
-            <div class="footer-links">
-              <a href="#"><i data-lucide="briefcase"></i></a>
-              <a href="#"><i data-lucide="code"></i></a>
-              <a href="#"><i data-lucide="message-circle"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </main>
+    </div>
+  </div>
+</section>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+<section id="capabilities">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">CAPABILITIES</div>
+      <h2>What I build with</h2>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-card" data-reveal>
+        <div class="icon">01</div>
+        <h3>Intelligent Systems</h3>
+        <p>Real-time architectures, IoT integrations, sensor systems, and hardware-software bridging.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">IoT</span><span class="skill-tag">Embedded C</span><span class="skill-tag">Sensors</span><span class="skill-tag">Edge AI</span>
+        </div>
+      </div>
+      <div class="cap-card" data-reveal>
+        <div class="icon">02</div>
+        <h3>Full Stack Applications</h3>
+        <p>Scalable interfaces and backend-connected platforms built and shipped end to end.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">Python</span><span class="skill-tag">Django</span><span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="cap-card" data-reveal>
+        <div class="icon">03</div>
+        <h3>AI Foundations</h3>
+        <p>Cloud AI concepts, intelligent workflows, data systems, and emerging embedded intelligence.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">OCI AI</span><span class="skill-tag">ML Concepts</span><span class="skill-tag">Data Systems</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">CREDENTIALS &amp; LEADERSHIP</div>
+      <h2>Certifications, roles, and record</h2>
+    </div>
+    <div class="cred-list" data-reveal>
+      <div class="cred-item">
+        <div class="cred-year">2026</div>
+        <div><div class="cred-title">Oracle OCI AI Foundations Associate</div><div class="cred-desc">Professional AI certification covering AI concepts and cloud technologies — 85% score.</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-year">2026</div>
+        <div><div class="cred-title">NPTEL Elite Certification — IIT Kharagpur</div><div class="cred-desc">Programming in Java, completed with Elite status.</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-year">2026</div>
+        <div><div class="cred-title">Smart India Hackathon — Team Leader</div><div class="cred-desc">Managed technical coordination and problem-solving during a national-level innovation competition.</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-year">2026</div>
+        <div><div class="cred-title">Technical Speaker &amp; Peer Educator, TCOER</div><div class="cred-desc">Led a Linux and SQL fundamentals session for first-year engineering students.</div></div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-year">2025–26</div>
+        <div><div class="cred-title">Web Development Intern, AMDOX (Remote)</div><div class="cred-desc">December 2025 – March 2026.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel" data-reveal>
+      <div class="eyebrow" style="justify-content:center;">INITIATE CONNECTION</div>
+      <h2>Let's build something that runs in the real world.</h2>
+      <p>Open to collaborating on projects, hackathons, internships, or just a technical discussion about intelligent systems.</p>
+      <div class="contact-cta">
+        <a href="mailto:sumitwagdare8@gmail.com" class="btn btn-primary">Send an email →</a>
+        <a href="https://github.com/SumitWagdare" class="btn btn-ghost">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/sumit-wagdare-455816419" class="btn btn-ghost">LinkedIn ↗</a>
+        <a href="https://www.instagram.com/_sumiitz___/" class="btn btn-ghost">Instagram ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <span class="foot-brand">sumit.dev — building systems that connect intelligence and impact.</span>
+    <div class="foot-links">
+      <a href="mailto:sumitwagdare8@gmail.com">Email</a>
+      <a href="https://github.com/SumitWagdare">GitHub</a>
+      <a href="https://www.linkedin.com/in/sumit-wagdare-455816419">LinkedIn</a>
+      <a href="https://www.instagram.com/_sumiitz___/">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="./main.js"></script>
+</body>
 </html>
